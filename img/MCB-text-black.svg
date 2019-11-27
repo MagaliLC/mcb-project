@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg996"
+   version="1.1"
+   viewBox="0 0 210 297"
+   height="297mm"
+   width="210mm">
+  <defs
+     id="defs990">
+    <clipPath
+       id="clipPath3006-7-60"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3004-6-10"
+         d="M 0,0 H 1190.551 V 841.89 H 0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath3006-7-6"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3004-6-1"
+         d="M 0,0 H 1190.551 V 841.89 H 0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath3006-7"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3004-6"
+         d="M 0,0 H 1190.551 V 841.89 H 0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath3006"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3004"
+         d="M 0,0 H 1190.551 V 841.89 H 0 Z" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata993">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer2">
+    <g
+       style="fill:#000000"
+       id="g3000-4"
+       transform="matrix(0.50848249,0,0,-0.50848249,44.336648,317.3052)">
+      <g
+         style="fill:#000000"
+         clip-path="url(#clipPath3006-7)"
+         id="g3002-8">
+        <g
+           style="fill:#000000"
+           transform="translate(211.7087,409.5057)"
+           id="g3008-9">
+          <path
+             id="path3010-3"
+             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 0,0 c -1.327,1.416 -2.982,2.581 -4.942,3.488 1.464,0.799 2.707,1.785 3.713,2.956 2.222,2.587 3.351,6.122 3.351,10.513 0,5.743 -1.812,10 -5.388,12.655 -3.44,2.556 -8.762,3.798 -16.275,3.798 h -25.806 v -50.656 h -5.044 c 1.15,2.736 1.923,5.863 2.306,9.37 l 0.24,2.204 h -16.411 l -0.309,-1.615 c -0.748,-3.893 -2.102,-6.794 -4.025,-8.613 -1.875,-1.774 -4.361,-2.638 -7.6,-2.638 -4.481,0 -7.913,1.677 -10.492,5.122 -2.677,3.58 -4.033,8.619 -4.033,14.969 0,6.36 1.39,11.467 4.129,15.179 2.64,3.576 6.039,5.313 10.396,5.313 3.483,0 6.13,-0.963 8.089,-2.946 2.026,-2.056 3.453,-5.405 4.241,-9.959 l 0.286,-1.653 h 14.971 V 33.41 h -14.616 v -3.702 c -1.24,1.044 -2.631,1.928 -4.157,2.646 -3.193,1.499 -7.026,2.261 -11.395,2.261 -8.912,0 -16.15,-3 -21.503,-8.913 -2.166,-2.391 -3.889,-5.137 -5.178,-8.21 l -0.011,15.918 h -23.134 l -11.136,-39.427 -10.631,39.427 h -23.586 v -50.744 h -7.302 v -12.747 h 27.881 v 12.747 h -6.276 V 8.998 l 11.432,-39.079 h 15.662 l 11.752,39.352 v -26.605 h -6.723 v -12.747 h 29.754 v 5.661 c 5.506,-4.61 12.896,-6.95 22.027,-6.95 8.278,0 14.804,1.96 19.398,5.832 1.214,1.022 2.297,2.189 3.255,3.49 v -8.033 h 33.549 c 7.983,0 13.734,1.49 17.577,4.551 3.919,3.13 5.908,8.001 5.908,14.486 C 3.944,-6.505 2.618,-2.79 0,0 m -28.683,21.065 h 6.203 c 2.78,0 4.826,-0.509 6.072,-1.518 1.135,-0.916 1.686,-2.33 1.686,-4.326 0,-2.265 -0.558,-3.888 -1.705,-4.957 -1.169,-1.092 -3.027,-1.645 -5.519,-1.645 h -6.737 z m 13.704,-36.521 c -1.439,-1.187 -3.781,-1.79 -6.967,-1.79 h -6.737 v 13.697 h 6.203 c 4.601,0 6.704,-0.864 7.661,-1.581 1.235,-0.932 1.834,-2.576 1.834,-5.024 0,-2.456 -0.653,-4.189 -1.994,-5.302" />
+        </g>
+      </g>
+    </g>
+    <text
+       id="text3014-0"
+       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.21328115px;font-family:'NewsGoth BT';-inkscape-font-specification:NewsGothicBT-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.50848246"
+       x="63.019329"
+       y="136.06961">
+      <tspan
+         id="tspan3012-2"
+         y="136.06961"
+         x="63.019329 69.121719 74.264801 78.491814 82.834167 87.977249 90.162872 95.111168 99.45359 101.63919 106.09702 110.43943 115.25069"
+         style="fill:#000000;stroke-width:0.50848246">MUSEU DE CERA</tspan>
+    </text>
+    <text
+       id="text3018-8"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.21328115px;font-family:'NewsGoth BT';-inkscape-font-specification:NewsGothicBT-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.50848246"
+       x="63.019329"
+       y="143.74454">
+      <tspan
+         id="tspan3016-7"
+         y="143.74454"
+         x="63.019329 67.643013 71.985435 76.702927 81.059715 85.17849 87.81134 92.600983 97.758453"
+         style="fill:#000000;stroke-width:0.50848246">BARCELONA</tspan>
+    </text>
+  </g>
+</svg>
