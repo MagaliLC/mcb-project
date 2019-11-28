@@ -7,14 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://use.fontawesome.com/fc6f18730a.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- <script src="https://use.fontawesome.com/fc6f18730a.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,500&display=swap" rel="stylesheet">
 
     <style>
+        #navbarSupportedContent a.active {
+            color: #fff;
+            font-weight: 700;
+        }
+        #top-menu {
+            font-family: 'Roboto',sans-serif;
+            background-color: #fcc43a;
+        }
         #top-menu ul li a {
             color: black;
-            font-size: 1.5em;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+        #top-menu ul li a:hover {
+            color: #fff;
         }
         
         #top-menu ul li {
@@ -26,7 +39,7 @@
             font-size: 2em;
             color: black;
         }
-        
+                
         .navbar-toggler-icon {
             color: black;
             border: black;
@@ -40,6 +53,7 @@
             width: 100%;
             align-items: stretch;
             margin-bottom: 0 !important;
+            border-radius: 0rem;
         }
         
         .idiomas {
@@ -53,6 +67,13 @@
             min-width: 75px;
             max-width: 75px;
             min-height: 600px;
+        }
+
+        #sidebar i {
+            color: #fcc43a;
+        }
+        #sidebar i:hover {
+            color: #fff;
         }
         
         .wrapper {
@@ -91,21 +112,52 @@
             font-family: 'Roboto', sans-serif;
             font-size: 1.7rem;
         }
+        i.fa-ticket-alt {
+            transform: rotate(-45deg);
+        }
+
+        /* ########## Estilos Contacto Modal ########## */
+        .modal-header {
+            background-color: #fcc43a;
+            border-bottom: none;
+        }
+        .modal-body {
+            background-color: #333333;
+            color: #fff;
+        }
+        #myModal button {
+            font-size: 1.25rem;
+            text-transform: uppercase;
+        }
+        /* ########## Fin Estilos Contacto Modal ########## */
+
+        /* Media Queries */
+        @media (max-width: 990px) {
+        .social {
+            flex-direction: row;
+            justify-content: space-around;
+            }   
+        }
+
+
+
     </style>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav id="top-menu" class="navbar navbar-expand-lg navbar-warning bg-warning">
-        <a class="navbar-brand mr-5" href="#">MCB</a>
+    <nav id="top-menu" class="navbar navbar-expand-lg">
+        <a class="navbar-brand mr-5" href="#">
+            <img src="img/MCB-0-black.webp" width="auto" height="30" alt="Logo Museo Cera Barcelona">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Wax Museum</a>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Wax Museum</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Fairies Forest</a>
@@ -121,7 +173,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <i class="fas fa-globe-europe" aria-hidden="true"></i>
                     </a>
                     <div class="dropdown-menu mr-5" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item idiomas" href="#">ES</a>
@@ -129,11 +181,11 @@
                     </div>
                 </li>
             </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fa fa-facebook"></span></a></li>
-                <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fa fa-twitter"></span></a></li>
-                <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fa fa-youtube"></span></a></li>
-                <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fa fa-linkedin"></span></a></li>
+            <ul class="navbar-nav social">
+                <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-youtube"></i></a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
             <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -145,27 +197,26 @@
     <div class="wrapper">
         <div class="jumbotron">
             <!-- sidebar -->
-            <nav id="sidebar" class="navbar-dark bg-dark">
+            <nav id="sidebar" class="navbar-dark bg-dark d-none d-lg-block">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item mx-auto py-4 pt-5 active">
-                        <a class="nav-link" href="#"><i class="fa fa-address-book fa-3x"></i></a>
+                        <a class="nav-link" href="#"><i class="fas fa-glass-martini-alt fa-2x"></i></a>
                     </li>
                     <li class="nav-item mx-auto py-4 pt-5">
-                        <a class="nav-link" href="#"><i class="fa fa-address-card fa-3x"></i></a>
+                        <a class="nav-link" href="#"><i class="far fa-calendar fa-2x"></i></a>
                     </li>
                     <li class="nav-item mx-auto py-4 pt-5">
-                        <a class="nav-link" href="#"><i class="fa fa-address-book fa-3x"></i></a>
+                        <a class="nav-link" href="#"><i class="fas fa-ticket-alt fa-2x"></i></a>
                     </li>
                     <li class="nav-item mx-auto py-4 pt-5">
-                        <a class="nav-link" href="#"><i class="fa fa-address-card fa-3x"></i></a>
+                        <a class="nav-link" href="#"><i class="fas fa-landmark fa-2x"></i></a>
                     </li>
                 </ul>
             </nav>
         </div>
     </div>
 
-    <!--     
-museum section -->
+    <!-- museum section -->
     <div class="container-fluid">
         <div class="row" id="wax-museum-section">
             <div class="col-12 col-md-12 col-lg-6 mb-5">
@@ -214,8 +265,7 @@ museum section -->
                 </div>
             </div>
 
-            <!--     
-plan section -->
+            <!-- plan section -->
             <div class="container-fluid">
                 <div class="row" id="plan-section">
                     <div class="col-12 col-md-12 col-lg-6">
@@ -289,8 +339,7 @@ plan section -->
                             <div class="form-group">
                                 <div class="g-recaptcha" data-sitekey="your_site_key"></div>
                                 <div>
-                                    <button type="submit" class="btn btn-dark mt-3">Enviar</button>
-                                    <button type="reset" class="btn btn-warning mt-3 ml-4">Borrar</button>
+                                    <button type="submit" class="btn btn-outline-warning mt-3">Enviar</button>
                                 </div>
                             </div>
                         </form>
