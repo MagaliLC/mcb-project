@@ -50,14 +50,38 @@
     align-items: stretch;
 }
 
-footer {
+.footer_1 {
     background-color: black;
+}
+
+.footer_2 {
+    background-color: #333;
+}
+
+.nav_line {
+    width: 1px;
+    background-color: #FCC43A;
+    font-size: 3.3em;
+}
+
+.ml-n7 {
+    margin-left: -7rem !important;
 }
 
 .stamp {
     height: 5em;
 }
 
+.bosc {
+    height: 5em;
+}
+
 .rrss {
-    height: 1.7em;
+    height: 1.5em;
+}
+
+.bcn_turisme {
+    display: inline-block;
+    width: 12em;
+    height: auto;
 }
