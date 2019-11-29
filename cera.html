@@ -123,12 +123,6 @@
         }
         /*-- FOOTER --*/
         
-        .adjusted {
-            width: 100vw;
-            margin-right: -15px;
-            margin-left: -15px;
-        }
-        
         .footer_1 {
             background-color: black;
         }
@@ -193,9 +187,27 @@
             }
         }
         
-        @media screen AND (max-width: 845px) {
+        @media screen AND (max-width: 920px) {
             .my_nav {
                 width: 80vw;
+            }
+        }
+        
+        @media screen AND (max-width: 425px) {
+            .my_nav {
+                width: 90vw;
+            }
+        }
+        
+        @media screen AND (max-width: 375px) {
+            .my_nav {
+                width: 100vw;
+            }
+        }
+        
+        @media screen AND (max-width: 320px) {
+            .my_nav {
+                width: 110vw;
             }
         }
     </style>
@@ -318,39 +330,40 @@
                     <button type="button" class="btn btn-outline-warning btn-lg mx-auto ml-5">+ INFO</button>
                 </div>
             </div>
-
-            <!-- plan section -->
-            <div class="container-fluid">
-                <div class="row" id="plan-section">
-                    <div class="col-12 col-md-12 col-lg-6">
-                        <div class="container-fluid w-75 mt-5">
-                            <h5 class="mr-10 text-justify mr-5 grey">PLAN YOUR VISIT
-                            </h5>
-                        </div>
-                        <div class="container-fluid w-75 mt-5">
-                            <p class="mr-10 museum-info grey">Let us wax poetic about the beauty of the cheeseburger. The flavour gracefully dances across your palate like a majestic figure skater on ice.
-                                </span>
-                            </p>
-                            <p class="mr-10 museum-info grey">The cheese melts on the burger and in your mouth, perfectly complementing the medium-rare beef.</span>
-                            </p>
-                        </div>
-                        <div class="text-center mt-5 d-none d-md-flex d-sm-none">
-                            <button type="button" class="btn btn-outline-dark btn-lg mx-auto ml-5">+ INFO</button>
-                        </div>
-                    </div>
-                    <div class="col mr-10 text-center">
-                        <img class="rounded img-fluid p-5" src="./img/el-cuidador.png" alt="muñeco de cera sosteninendo una linterna">
-                    </div>
-                    <div class="w-100 mb-5"></div>
-                    <div class="text-center w-100 mb-5 d-flex d-md-none d-sm-flex">
-                        <button type="button" class="btn btn-outline-dark btn-lg mx-auto ml-5">+ INFO</button>
-                    </div>
+        </div>
+        <!-- plan section -->
+        <!-- <div class="container-fluid"> -->
+        <div class="row" id="plan-section">
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="container-fluid w-75 mt-5">
+                    <h5 class="mr-10 text-justify mr-5 grey">PLAN YOUR VISIT
+                    </h5>
+                </div>
+                <div class="container-fluid w-75 mt-5">
+                    <p class="mr-10 museum-info grey">Let us wax poetic about the beauty of the cheeseburger. The flavour gracefully dances across your palate like a majestic figure skater on ice.
+                        </span>
+                    </p>
+                    <p class="mr-10 museum-info grey">The cheese melts on the burger and in your mouth, perfectly complementing the medium-rare beef.</span>
+                    </p>
+                </div>
+                <div class="text-center mt-5 d-none d-md-flex d-sm-none">
+                    <button type="button" class="btn btn-outline-dark btn-lg mx-auto ml-5">+ INFO</button>
                 </div>
             </div>
+            <div class="col mr-10 text-center">
+                <img class="rounded img-fluid p-5" src="./img/el-cuidador.png" alt="muñeco de cera sosteninendo una linterna">
+            </div>
+            <div class="w-100 mb-5"></div>
+            <div class="text-center w-100 mb-5 d-flex d-md-none d-sm-flex">
+                <button type="button" class="btn btn-outline-dark btn-lg mx-auto ml-5">+ INFO</button>
+            </div>
         </div>
+        <!-- </div> -->
+
+
         <!-- FOOTER -->
-        <footer class="adjusted">
-            <div class="footer_1 d-flex justify-content-around flex-wrap pt-2">
+        <footer class="row ">
+            <div class="col-12 footer_1 d-flex justify-content-around flex-wrap pt-2">
                 <div class="row">
                     <ol class="my_nav col-12 nav_footer navbar small align-self-center">
                         <li class=" nav-item list-inline-item"><a class="text-light nav-link" href="#">Buy tickets</a></li>
@@ -363,34 +376,34 @@
                 <div class="row">
                     <ol class="navbar col-12">
                         <li class="list-inline-item"><img class="stamp img-fluid" src="./img/MCB-stamp-white-adjusted.svg" alt="MCB_stamp_logo"></li>
-                        <li class="nav_line list-inline-item text-warning mx-2">&nbsp;</li>
-                        <li class="nav-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="nav-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li class="nav-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-youtube"></i></a></li>
-                        <li class="nav-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="nav_line list-inline-item mx-2">&nbsp;</li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-linkedin-in"></i></a></li>
                     </ol>
                 </div>
                 <div class="row">
                     <ol class="navbar col-12">
                         <li class="list-inline-item"><img class="bosc img-fluid" src="./img/bosc-white-adjusted.svg" alt="bosc_de_les_fades_logo"></li>
-                        <li class="nav_line list-inline-item text-warning mx-2">&nbsp;</li>
-                        <li class="nav-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="nav-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li class="nav-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-youtube"></i></a></li>
-                        <li class="nav-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="nav_line list-inline-item mx-2">&nbsp;</li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-linkedin-in"></i></a></li>
                     </ol>
                 </div>
             </div>
-            <div class="footer_2 pt-2">
-                <div class="row  d-flex justify-content-between">
-                    <p class="col text-light small pl-5">&copy; IT Academy</p>
-                    <span class="bcn_turisme pr-5"><img class="img-fluid" src="./img/bcn-turisme-white-adjusted.svg" alt="bcn_turisme"></span>
+            <div class="col-12 footer_2 p-3 ">
+                <div class="row justify-content-between px-2">
+                    <p class="align-self-center mb-0 text-light small">&copy; IT Academy</p>
+                    <span class="bcn_turisme "><img class="img-fluid" src="./img/bcn-turisme-white-adjusted.svg" alt="bcn_turisme"></span>
                 </div>
             </div>
+
         </footer>
     </div>
     <!-- FOOTER -->
-    </div>
     <!-- .modal -->
     <div id="myModal" class="modal fade">
         <div class="modal-dialog" role="document">
