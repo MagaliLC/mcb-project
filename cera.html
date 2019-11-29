@@ -17,15 +17,18 @@
             color: #fff;
             font-weight: 700;
         }
+        
         #top-menu {
-            font-family: 'Roboto',sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #fcc43a;
         }
+        
         #top-menu ul li a {
             color: black;
             font-size: 1.2em;
             text-transform: uppercase;
         }
+        
         #top-menu ul li a:hover {
             color: #fff;
         }
@@ -39,7 +42,7 @@
             font-size: 2em;
             color: black;
         }
-                
+        
         .navbar-toggler-icon {
             color: black;
             border: black;
@@ -68,10 +71,11 @@
             max-width: 75px;
             min-height: 600px;
         }
-
+        
         #sidebar i {
             color: #fcc43a;
         }
+        
         #sidebar i:hover {
             color: #fff;
         }
@@ -112,35 +116,41 @@
             font-family: 'Roboto', sans-serif;
             font-size: 1.7rem;
         }
+        
         i.fa-ticket-alt {
             transform: rotate(-45deg);
         }
-
         /* ########## Estilos Contacto Modal ########## */
+        
         .modal-header {
             background-color: #fcc43a;
             border-bottom: none;
         }
+        
         .modal-body {
             background-color: #333333;
             color: #fff;
         }
+        
         #myModal button {
             font-size: 1.25rem;
             text-transform: uppercase;
         }
         /* ########## Fin Estilos Contacto Modal ########## */
-
         /* Media Queries */
+        
         @media (max-width: 990px) {
-        .social {
-            flex-direction: row;
-            justify-content: space-around;
-            }   
+            .social {
+                flex-direction: row;
+                justify-content: space-around;
+            }
         }
-
-
-
+        
+        @media (max-width: 1153px) {
+            #sidebar {
+                top: 88px;
+            }
+        }
     </style>
 </head>
 
@@ -228,15 +238,14 @@
                     <p class="text-light museum-info">Time has come to stanstill and wax has come to life through some of the most prominent figures in the history of mankind.</span>
                     </p>
                 </div>
-
-                <div class="text-center mt-5 d-none d-md-none d-sm-flex">
+                <div class="text-center mt-5 d-none d-md-flex d-sm-none">
                     <button type="button" class="btn btn-outline-warning btn-lg mx-auto ml-5">+ INFO</button>
                 </div>
             </div>
             <div class="col text-center">
                 <img class="rounded img-fluid p-5" src="./img/g_2.jpg" alt="payaso">
             </div>
-            <div class="text-center w-100 mb-5 d-flex d-md-flex d-sm-none">
+            <div class="text-center w-100 mb-5 d-flex d-md-none d-sm-flex">
                 <button type="button" class="btn btn-outline-warning btn-lg mx-auto ml-5">+ INFO</button>
             </div>
         </div>
@@ -280,7 +289,7 @@
                             <p class="mr-10 museum-info grey">The cheese melts on the burger and in your mouth, perfectly complementing the medium-rare beef.</span>
                             </p>
                         </div>
-                        <div class="text-center mt-5 d-none  d-md-none d-sm-flex">
+                        <div class="text-center mt-5 d-none d-md-flex d-sm-none">
                             <button type="button" class="btn btn-outline-dark btn-lg mx-auto ml-5">+ INFO</button>
                         </div>
                     </div>
@@ -288,7 +297,7 @@
                         <img class="rounded img-fluid p-5" src="./img/el-cuidador.png" alt="muñeco de cera sosteninendo una linterna">
                     </div>
                     <div class="w-100"></div>
-                    <div class="text-center w-100 mb-5 d-flex d-md-flex d-sm-none">
+                    <div class="text-center w-100 mb-5 d-flex d-md-none d-sm-flex">
                         <button type="button" class="btn btn-outline-dark btn-lg mx-auto ml-5">+ INFO</button>
                     </div>
                 </div>
