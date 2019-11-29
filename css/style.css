@@ -1,0 +1,87 @@
+* {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
+}
+
+#top-menu ul li a {
+    color: black;
+    font-size: 1.5em;
+}
+
+#top-menu ul li {
+    padding: 0 0.5em 0 0.5em;
+    display: inline-block;
+}
+
+#top-menu .navbar-brand {
+    font-size: 2em;
+    color: black;
+}
+
+.navbar-toggler-icon {
+    color: black;
+    border: black;
+}
+
+.jumbotron {
+    background-image: url("../img/g_2.jpg");
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.idiomas {
+    font-size: 0.5em;
+}
+
+#sidebar {
+    position: absolute;
+    top: 74px;
+    left: 0;
+    min-width: 75px;
+    max-width: 75px;
+    min-height: 600px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.footer_1 {
+    background-color: black;
+}
+
+.footer_2 {
+    background-color: #333;
+}
+
+.nav_line {
+    width: 1px;
+    background-color: #FCC43A;
+    font-size: 3.3em;
+}
+
+.ml-n7 {
+    margin-left: -7rem !important;
+}
+
+.stamp {
+    height: 5em;
+}
+
+.bosc {
+    height: 5em;
+}
+
+.rrss {
+    height: 1.5em;
+}
+
+.bcn_turisme {
+    display: inline-block;
+    width: 12em;
+    height: auto;
+}
