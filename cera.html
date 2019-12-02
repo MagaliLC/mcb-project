@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <!-- <script src="https://use.fontawesome.com/fc6f18730a.js"></script> -->
+
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,500&display=swap" rel="stylesheet">
 
     <style>
@@ -121,6 +121,40 @@
         i.fa-ticket-alt {
             transform: rotate(-45deg);
         }
+        /*-- FOOTER --*/
+        
+        .footer_1 {
+            background-color: black;
+        }
+        
+        .footer_2 {
+            background-color: #333;
+        }
+        
+        .nav_line {
+            width: 1px;
+            background-color: #FCC43A;
+            font-size: 3.3em;
+        }
+        
+        .stamp {
+            height: 5em;
+        }
+        
+        .bosc {
+            height: 5em;
+        }
+        
+        .rrss {
+            font-size: x-large;
+        }
+        
+        .bcn_turisme {
+            display: inline-block;
+            width: 12em;
+            height: auto;
+        }
+        /*-- FOOTER --*/
         /* ########## Estilos Contacto Modal ########## */
         
         .modal-header {
@@ -152,6 +186,30 @@
                 top: 88px;
             }
         }
+        
+        @media screen AND (max-width: 920px) {
+            .my_nav {
+                width: 80vw;
+            }
+        }
+        
+        @media screen AND (max-width: 425px) {
+            .my_nav {
+                width: 90vw;
+            }
+        }
+        
+        @media screen AND (max-width: 375px) {
+            .my_nav {
+                width: 100vw;
+            }
+        }
+        
+        @media screen AND (max-width: 320px) {
+            .my_nav {
+                width: 110vw;
+            }
+        }
     </style>
 </head>
 
@@ -180,7 +238,7 @@
                     <a class="nav-link" href="#">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="openModal()">Contacto</a>
+                    <a class="nav-link" href="#" onclick="openModal()">Contact</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -198,10 +256,7 @@
                 <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-youtube"></i></a></li>
                 <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
+
         </div>
     </nav>
     <!-- carousel -->
@@ -227,8 +282,9 @@
         </div>
     </div>
 
-    <!-- museum section -->
+
     <div class="container-fluid">
+        <!-- museum section -->
         <div class="row" id="wax-museum-section">
             <div class="col-12 col-md-12 col-lg-6 mb-5">
                 <div class="container-fluid w-75 mt-5">
@@ -274,101 +330,144 @@
                     <button type="button" class="btn btn-outline-warning btn-lg mx-auto ml-5">+ INFO</button>
                 </div>
             </div>
-
-            <!-- plan section -->
-            <div class="container-fluid">
-                <div class="row" id="plan-section">
-                    <div class="col-12 col-md-12 col-lg-6">
-                        <div class="container-fluid w-75 mt-5">
-                            <h5 class="mr-10 text-justify mr-5 grey">PLAN YOUR VISIT
-                            </h5>
-                        </div>
-                        <div class="container-fluid w-75 mt-5">
-                            <p class="mr-10 museum-info grey">Let us wax poetic about the beauty of the cheeseburger. The flavour gracefully dances across your palate like a majestic figure skater on ice.
-                                </span>
-                            </p>
-                            <p class="mr-10 museum-info grey">The cheese melts on the burger and in your mouth, perfectly complementing the medium-rare beef.</span>
-                            </p>
-                        </div>
-                        <div class="text-center mt-5 d-none d-md-flex d-sm-none">
-                            <button type="button" class="btn btn-outline-dark btn-lg mx-auto ml-5">+ INFO</button>
-                        </div>
-                    </div>
-                    <div class="col mr-10 text-center">
-                        <img class="rounded img-fluid p-5" src="./img/el-cuidador.png" alt="muñeco de cera sosteninendo una linterna">
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="text-center w-100 mb-5 d-flex d-md-none d-sm-flex">
-                        <button type="button" class="btn btn-outline-dark btn-lg mx-auto ml-5">+ INFO</button>
-                    </div>
+        </div>
+        <!-- plan section -->
+        <!-- <div class="container-fluid"> -->
+        <div class="row" id="plan-section">
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="container-fluid w-75 mt-5">
+                    <h5 class="mr-10 text-justify mr-5 grey">PLAN YOUR VISIT
+                    </h5>
+                </div>
+                <div class="container-fluid w-75 mt-5">
+                    <p class="mr-10 museum-info grey">Let us wax poetic about the beauty of the cheeseburger. The flavour gracefully dances across your palate like a majestic figure skater on ice.
+                        </span>
+                    </p>
+                    <p class="mr-10 museum-info grey">The cheese melts on the burger and in your mouth, perfectly complementing the medium-rare beef.</span>
+                    </p>
+                </div>
+                <div class="text-center mt-5 d-none d-md-flex d-sm-none">
+                    <button type="button" class="btn btn-outline-dark btn-lg mx-auto ml-5">+ INFO</button>
                 </div>
             </div>
+            <div class="col mr-10 text-center">
+                <img class="rounded img-fluid p-5" src="./img/el-cuidador.png" alt="muñeco de cera sosteninendo una linterna">
+            </div>
+            <div class="w-100 mb-5"></div>
+            <div class="text-center w-100 mb-5 d-flex d-md-none d-sm-flex">
+                <button type="button" class="btn btn-outline-dark btn-lg mx-auto ml-5">+ INFO</button>
+            </div>
         </div>
+        <!-- </div> -->
 
-        <!-- .modal -->
-        <div id="myModal" class="modal fade">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="row">
-                            <div class="col-12">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clearFields()">
+
+        <!-- FOOTER -->
+        <footer class="row ">
+            <div class="col-12 footer_1 d-flex justify-content-around flex-wrap pt-2">
+                <div class="row">
+                    <ol class="my_nav col-12 nav_footer navbar small align-self-center">
+                        <li class=" nav-item list-inline-item"><a class="text-light nav-link" href="#">Buy tickets</a></li>
+                        <li class=" nav-item list-inline-item text-warning">|</li>
+                        <li class=" nav-item list-inline-item"><a class="text-light nav-link" href="#">Plan your visit</a></li>
+                        <li class=" nav-item list-inline-item text-warning">|</li>
+                        <li class=" nav-item list-inline-item"><a class="text-light nav-link" href="#" onclick="openModal()">contact</a></li>
+                    </ol>
+                </div>
+                <div class="row">
+                    <ol class="navbar col-12">
+                        <li class="list-inline-item"><img class="stamp img-fluid" src="./img/MCB-stamp-white-adjusted.svg" alt="MCB_stamp_logo"></li>
+                        <li class="nav_line list-inline-item mx-2">&nbsp;</li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ol>
+                </div>
+                <div class="row">
+                    <ol class="navbar col-12">
+                        <li class="list-inline-item"><img class="bosc img-fluid" src="./img/bosc-white-adjusted.svg" alt="bosc_de_les_fades_logo"></li>
+                        <li class="nav_line list-inline-item mx-2">&nbsp;</li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li class="nav-item list-inline-item"><a class="rrss text-light nav-link px-2" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-12 footer_2 p-3 ">
+                <div class="row justify-content-between px-2">
+                    <p class="align-self-center mb-0 text-light small">&copy; IT Academy</p>
+                    <span class="bcn_turisme "><img class="img-fluid" src="./img/bcn-turisme-white-adjusted.svg" alt="bcn_turisme"></span>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <!-- FOOTER -->
+    <!-- .modal -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clearFields()">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
-                                <h3 class="modal-title">Contacta con nosotros</h5>
-                            </div>
-                            <div class="col-12 mt-3">
-                                <p>Los campos con asterisco (*) son obligatorios.</p>
-                            </div>
+                            <h3 class="modal-title">Contacta con nosotros</h5>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <p>Los campos con asterisco (*) son obligatorios.</p>
                         </div>
                     </div>
-                    <div class="modal-body">
-                        <!-- ContactForm -->
-                        <form role="form" method="POST" action="./mail/contact_me.php" name="vform" onsubmit="return Validate()">
-                            <div class="form-group">
-                                <label class="control-label">Nombre*</label>
-                                <div>
-                                    <input type="text" class="form-control input-lg" name="nombre" placeholder="Introduce tu nombre">
-                                    <div id="nombre_error" class="val_error"></div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">E-mail*</label>
-                                <div>
-                                    <input type="text" class="form-control input-lg" name="email" placeholder="Introduce tu e-mail">
-                                    <div id="email_error" class="val_error"></div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="mensaje">Mensaje*</label>
-                                <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Escribe aquí"></textarea>
-                                <div id="mensaje_error" class="val_error"></div>
-                                <div id="checkMessage">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-                                <div>
-                                    <button type="submit" class="btn btn-outline-warning mt-3">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
                 </div>
-                <!-- /.modal-content -->
+                <div class="modal-body">
+                    <!-- ContactForm -->
+                    <form role="form" method="POST" action="./mail/contact_me.php" name="vform" onsubmit="return Validate()">
+                        <div class="form-group">
+                            <label class="control-label">Nombre*</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="nombre" placeholder="Introduce tu nombre">
+                                <div id="nombre_error" class="val_error"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">E-mail*</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="email" placeholder="Introduce tu e-mail">
+                                <div id="email_error" class="val_error"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje*</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Escribe aquí"></textarea>
+                            <div id="mensaje_error" class="val_error"></div>
+                            <div id="checkMessage">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                            <div>
+                                <button type="submit" class="btn btn-outline-warning mt-3">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <!-- /.modal-dialog -->
+            <!-- /.modal-content -->
         </div>
-        <!-- /.modal -->
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
 
 
-        <!-- Optional JavaScript -->
-        <script src="js/script.js"></script>
-        <script src="js/validationForm.js"></script>
-        <!-- JS Bootstrap -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/validationForm.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
