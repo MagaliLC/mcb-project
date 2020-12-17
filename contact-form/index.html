@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Contacto</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <div class="row h-100">
+        <div class="col-sm-12 align-self-center text-center">
+            <button type="button" onclick="openModal()">Contact</button>
+        </div>
+    </div>
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clearFields()">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h3 class="modal-title">Contacta con nosotros</h5>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <p>Los campos con asterisco (*) son obligatorios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <!-- ContactForm -->
+                    <form role="form" method="POST" action="./mail/contact_me.php" name="vform" onsubmit="return Validate()">
+                        <div class="form-group">
+                            <label class="control-label">Nombre*</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="nombre" placeholder="Introduce tu nombre">
+                                <div id="nombre_error" class="val_error"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">E-mail*</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="email" placeholder="Introduce tu e-mail">
+                                <div id="email_error" class="val_error"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje*</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Escribe aquí"></textarea>
+                            <div id="mensaje_error" class="val_error"></div>
+                            <div id="checkMessage">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                            <div>
+                                <button type="submit" class="btn btn-dark mt-3">Enviar</button>
+                                <button type="reset" class="btn btn-warning mt-3">Borrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!-- Optional JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/validationForm.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
